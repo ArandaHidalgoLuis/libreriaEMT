@@ -7,7 +7,6 @@ def inicializar(numeroParada):
     soup = BeautifulSoup(page.text, 'html.parser')
 
     liBuses = soup.find_all('ul', {'data-role': 'listview'})
-    print(liBuses)
     return liBuses
 
 def devolverNBuses(liBuses):
